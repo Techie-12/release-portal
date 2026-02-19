@@ -8,5 +8,5 @@
       "jql": "project = \\\"Converged Identity\\\" AND cf[10020] IN (933,1191) AND fixVersion IN (\\\"V10.11.003\\\",\\\"V10.11.004\\\") ORDER BY updated DESC"
     }
   ],
-  "maxResults": 10000
+  "maxResults": 5000
 }
