@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ARCON Release Management Portal</title>
+<style>
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: #f4f6f8;
+        color: #333;
+    }
+
+    header {
+        background-color: #1f4e78;
+        color: white;
+        padding: 20px;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    header p {
+        margin: 5px 0 0;
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 25px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+        border-left: 5px solid #1f4e78;
+        padding-left: 10px;
+    }
+
+    /* Product Cards */
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 6px;
+        padding: 20px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card h3 {
+        margin-top: 0;
+        color: #1f4e78;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card a {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: #1f4e78;
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-size: 13px;
+    }
+
+    /* Release Table */
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+    }
+
+    th, td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th {
+        background-color: #305496;
+        color: white;
+        font-size: 14px;
+    }
+
+    .badge {
+        padding: 4px 8px;
+        border-radius: 12px;
+        font-size: 12px;
+        color: white;
+    }
+
+    .released {
+        background-color: #28a745;
+    }
+
+    .upcoming {
+        background-color: #007bff;
+    }
+
+    .btn {
+        background-color: #1f4e78;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    footer {
+        background-color: #1f4e78;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        margin-top: 30px;
+        font-size: 13px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>ARCON Release Management Portal</h1>
+<p>Central hub for requesting and tracking product releases</p>
+</header>
+
+<div class="container">
+
+<!-- Products Section -->
+<div class="section-title">Products</div>
+<div class="products">
+    <div class="card">
+        <h3>PAM</h3>
+        <p>Privileged Access Management</p>
+        <a href="#">View Releases</a>
+    </div>
+    <div class="card">
+        <h3>Converged Identity</h3>
+        <p>Identity governance & access management</p>
+        <a href="#ci-releases">View Releases</a>
+    </div>
+    <div class="card">
+        <h3>EPM</h3>
+        <p>Endpoint Privilege Management</p>
+        <a href="#">View Releases</a>
+    </div>
+    <div class="card">
+        <h3>MyVault</h3>
+        <p>Secure credential storage</p>
+        <a href="#">View Releases</a>
+    </div>
+    <div class="card">
+        <h3>GRA</h3>
+        <p>Governance, Risk & Analytics</p>
+        <a href="#">View Releases</a>
+    </div>
+    <div class="card">
+        <h3>MFA</h3>
+        <p>Multi-Factor Authentication</p>
+        <a href="#">View Releases</a>
+    </div>
+</div>
+
+<!-- Patches Shared Section -->
+<br><br>
+<div class="section-title">Patches Shared</div>
+<p>View patches that have been shared across PAM, Converged Identity, and EPM.</p>
+
+<a class="btn"
+   href="https://yourcompany.atlassian.net/issues/?jql=project%20IN%20(%22PAM%20Issue%20Tracker%22,%20%22Converged%20Identity%22,%20%22EPM%20Issue%20Tracker%22)%20AND%20status%20=%20%22Patch%20Shared%22"
+   target="_blank">
+View Patch Shared Issues
+</a>
+
+<!-- Converged Identity Releases -->
+<br><br>
+<div class="section-title" id="ci-releases">Converged Identity – Releases</div>
+<table>
+<tr>
+    <th>Version</th>
+    <th>Release Type</th>
+    <th>Status</th>
+    <th>Release Date</th>
+    <th>Platform</th>
+    <th>Action</th>
+</tr>
+<tr>
+    <td>10.11.001</td>
+    <td>Single Sprint</td>
+    <td><span class="badge released">Released</span></td>
+    <td>12-Jan-2026</td>
+    <td>Linux</td>
+    <td><a class="btn" href="#">View</a></td>
+</tr>
+<tr>
+    <td>10.11.003</td>
+    <td>Planned</td>
+    <td><span class="badge upcoming">Upcoming</span></td>
+    <td>TBD</td>
+    <td>Linux</td>
+    <td><a class="btn" href="#">Coming Soon</a></td>
+</tr>
+</table>
+
+<!-- Request Section -->
+<br><br>
+<div class="section-title">Request a Release</div>
+<p>
+    To request a specific product release, please submit the request form.
+</p>
+
+<a class="btn" href="https://forms.office.com/r/m45W03uKfB" target="_blank">
+    Request a Release
+</a>
+
+</div>
+
+<footer>
+© ARCON | Release Management Team
+</footer>
+
+</body>
+</html>

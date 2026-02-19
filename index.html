@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARCON Release Management Portal</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    :root { --brand:#1f4e78; --brand2:#305496; --bg:#f4f6f8; --text:#333; --card:#fff; --shadow:0 2px 6px rgba(0,0,0,.1); }
+    body { font-family: "Segoe UI", SegoeUI, system-ui, -apple-system, Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:var(--text) }
+    header { background:var(--brand); color:#fff; padding:20px }
+    header h1 { margin:0 }
+    header p { margin:6px 0 0; font-size:14px }
+    .tabs { position: sticky; top:0; z-index: 10; box-shadow: var(--shadow) }
+    nav { background:#173e5f; display:flex; flex-wrap:wrap; gap:10px; padding:10px 20px }
+    nav a { color:#fff; text-decoration:none; font-size:14px; background:rgba(255,255,255,.08); padding:6px 10px; border-radius:4px }
+    nav a:hover { background:rgba(255,255,255,.18) }
+    .container { padding:25px }
+    .section-title { font-size:20px; margin:40px 0 15px; border-left:5px solid var(--brand); padding-left:10px }
+    .products { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap:20px }
+    .card { background:var(--card); border-radius:6px; padding:20px; box-shadow:var(--shadow); transition: transform .2s }
+    .card:hover { transform: translateY(-4px) }
+    .card h3 { margin:0 0 6px; color:var(--brand) }
+    .card p { font-size:14px; margin:0 }
+    .btn { display:inline-block; margin-top:12px; background:var(--brand); color:#fff; text-decoration:none; padding:8px 12px; border-radius:4px; font-size:13px }
+    table { width:100%; border-collapse:collapse; background:#fff }
+    th, td { padding:12px; border-bottom:1px solid #ddd; text-align:left }
+    th { background:var(--brand2); color:#fff; font-size:14px }
+    .badge{ padding:4px 8px; border-radius:12px; font-size:12px; color:#fff }
+    .released{ background:#28a745 } .upcoming{ background:#007bff } .planned{ background:#6f42c1 }
+    footer { background:var(--brand); color:#fff; text-align:center; padding:12px; margin-top:30px; font-size:13px }
+  </style>
+</head>
+<body>
+  <header id="top">
+    <h1>ARCON Release Management Portal</h1>
+    <p>Central hub for requesting and tracking product releases</p>
+  </header>
+  <div class="tabs">
+    <nav>
+      <a href="#products">Home</a>
+      <a href="#pam">PAM</a>
+      <a href="#ci">Converged Identity</a>
+      <a href="#epm">EPM</a>
+      <a href="#myvault">MyVault</a>
+      <a href="#gra">GRA</a>
+      <a href="#mfa">MFA</a>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="section-title" id="products">Products</div>
+    <div class="products">
+      <div class="card"><h3>PAM</h3><p>Privileged Access Management</p><a class="btn" href="#pam">View Releases</a></div>
+      <div class="card"><h3>Converged Identity</h3><p>Identity governance & access management</p><a class="btn" href="#ci">View Releases</a></div>
+      <div class="card"><h3>EPM</h3><p>Endpoint Privilege Management</p><a class="btn" href="#epm">View Releases</a></div>
+      <div class="card"><h3>MyVault</h3><p>Secure credential storage</p><a class="btn" href="#myvault">View Releases</a></div>
+      <div class="card"><h3>GRA</h3><p>Governance, Risk & Analytics</p><a class="btn" href="#gra">View Releases</a></div>
+      <div class="card"><h3>MFA</h3><p>Multi-Factor Authentication</p><a class="btn" href="#mfa">View Releases</a></div>
+    </div>
+
+    <div class="section-title" id="ci">Converged Identity – Releases</div>
+    <table>
+      <thead>
+        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <!--CI_TBODY--> 
+        <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
+        <!--/CI_TBODY-->
+      </tbody>
+    </table>
+
+    <div class="section-title" id="pam">PAM – Releases</div>
+    <table>
+      <thead>
+        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <!--PAM_TBODY--> 
+        <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
+        <!--/PAM_TBODY-->
+      </tbody>
+    </table>
+
+    <div class="section-title" id="epm">EPM – Releases</div>
+    <table>
+      <thead>
+        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <!--EPM_TBODY--> 
+        <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
+        <!--/EPM_TBODY-->
+      </tbody>
+    </table>
+
+    <div class="section-title" id="myvault">MyVault – Releases</div>
+    <table>
+      <thead>
+        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <!--MYVAULT_TBODY--> 
+        <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
+        <!--/MYVAULT_TBODY-->
+      </tbody>
+    </table>
+
+    <div class="section-title" id="gra">GRA – Releases</div>
+    <table>
+      <thead>
+        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <!--GRA_TBODY--> 
+        <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
+        <!--/GRA_TBODY-->
+      </tbody>
+    </table>
+
+    <div class="section-title" id="mfa">MFA – Releases</div>
+    <table>
+      <thead>
+        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <!--MFA_TBODY--> 
+        <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
+        <!--/MFA_TBODY-->
+      </tbody>
+    </table>
+
+  </div>
+  <footer>© ARCON • Release Management Team</footer>
+</body>
+</html>
