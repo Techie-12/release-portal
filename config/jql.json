@@ -5,41 +5,8 @@
       "key": "CI",
       "name": "Converged Identity",
       "tbodyMarker": "CI_TBODY",
-      "jql": "project = \\\"Converged Identity\\\" AND cf[10020] IN (933,1191) AND fixVersion IN (\\\"V10.11.003\\\",\\\"V10.11.004\\\") ORDER BY updated DESC"
+      "jql": "project = "Converged Identity" AND cf[10020] IN (933,1191) AND fixVersion IN (\"V10.11.003\",\"V10.11.004\") ORDER BY updated DESC"
     }
   ],
-  "maxResults": 100
-}
-    {
-      "key": "PAM",
-      "name": "PAM",
-      "tbodyMarker": "PAM_TBODY",
-      "jql": "project=PAM ORDER BY fixVersion DESC"
-    },
-    {
-      "key": "EPM",
-      "name": "EPM",
-      "tbodyMarker": "EPM_TBODY",
-      "jql": "project=EPM ORDER BY fixVersion DESC"
-    },
-    {
-      "key": "MV",
-      "name": "MyVault",
-      "tbodyMarker": "MYVAULT_TBODY",
-      "jql": "project=MV ORDER BY fixVersion DESC"
-    },
-    {
-      "key": "GRA",
-      "name": "GRA",
-      "tbodyMarker": "GRA_TBODY",
-      "jql": "project=GRA ORDER BY fixVersion DESC"
-    },
-    {
-      "key": "MFA",
-      "name": "MFA",
-      "tbodyMarker": "MFA_TBODY",
-      "jql": "project=MFA ORDER BY fixVersion DESC"
-    }
-  ],
-  "maxResults": 100
+  "maxResults": 10000
 }
