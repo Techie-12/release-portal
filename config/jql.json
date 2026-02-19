@@ -5,8 +5,11 @@
       "key": "CI",
       "name": "Converged Identity",
       "tbodyMarker": "CI_TBODY",
-      "jql": "project = "Converged Identity" AND cf[10020] IN (933, 1191) AND fixVersion in ("V10.11.003", "V10.11.004") ORDER BY updated DESC"
-    },
+      "jql": "project = \\\"Converged Identity\\\" AND cf[10020] IN (933,1191) AND fixVersion IN (\\\"V10.11.003\\\",\\\"V10.11.004\\\") ORDER BY updated DESC"
+    }
+  ],
+  "maxResults": 100
+}
     {
       "key": "PAM",
       "name": "PAM",
