@@ -36,6 +36,7 @@
     <h1>ARCON Release Management Portal</h1>
     <p>Central hub for requesting and tracking product releases</p>
   </header>
+
   <div class="tabs">
     <nav>
       <a href="#products">Home</a>
@@ -45,109 +46,107 @@
       <a href="#myvault">MyVault</a>
       <a href="#gra">GRA</a>
       <a href="#mfa">MFA</a>
+      <a href="#patches-shared">Patches Shared</a>
+      <a href="#request-release">Request a Release</a>
     </nav>
   </div>
+
   <div class="container">
     <div class="section-title" id="products">Products</div>
     <div class="products">
       <div class="card"><h3>PAM</h3><p>Privileged Access Management</p><a class="btn" href="#pam">View Releases</a></div>
-      <div class="card"><h3>Converged Identity</h3><p>Identity governance & access management</p><a class="btn" href="#ci">View Releases</a></div>
+      <div class="card"><h3>Converged Identity</h3><p>Identity governance &amp; access management</p><a class="btn" href="#ci">View Releases</a></div>
       <div class="card"><h3>EPM</h3><p>Endpoint Privilege Management</p><a class="btn" href="#epm">View Releases</a></div>
       <div class="card"><h3>MyVault</h3><p>Secure credential storage</p><a class="btn" href="#myvault">View Releases</a></div>
-      <div class="card"><h3>GRA</h3><p>Governance, Risk & Analytics</p><a class="btn" href="#gra">View Releases</a></div>
+      <div class="card"><h3>GRA</h3><p>Governance, Risk &amp; Analytics</p><a class="btn" href="#gra">View Releases</a></div>
       <div class="card"><h3>MFA</h3><p>Multi-Factor Authentication</p><a class="btn" href="#mfa">View Releases</a></div>
     </div>
 
-    <div class="section-title" id="ci">Converged Identity – Releases</div>
+    <div class="section-title" id="ci">Converged Identity - Releases</div>
     <table>
       <thead>
         <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
       </thead>
       <tbody>
-        <!--CI_TBODY--> 
+        <!--CI_TBODY-->
         <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
         <!--/CI_TBODY-->
       </tbody>
     </table>
 
-    <div class="section-title" id="pam">PAM – Releases</div>
+    <div class="section-title" id="pam">PAM - Releases</div>
     <table>
       <thead>
         <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
       </thead>
       <tbody>
-        <!--PAM_TBODY--> 
+        <!--PAM_TBODY-->
         <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
         <!--/PAM_TBODY-->
       </tbody>
     </table>
 
-    <div class="section-title" id="epm">EPM – Releases</div>
+    <div class="section-title" id="epm">EPM - Releases</div>
     <table>
       <thead>
         <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
       </thead>
       <tbody>
-        <!--EPM_TBODY--> 
+        <!--EPM_TBODY-->
         <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
         <!--/EPM_TBODY-->
       </tbody>
     </table>
 
-    <div class="section-title" id="myvault">MyVault – Releases</div>
+    <div class="section-title" id="myvault">MyVault - Releases</div>
     <table>
       <thead>
         <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
       </thead>
       <tbody>
-        <!--MYVAULT_TBODY--> 
+        <!--MYVAULT_TBODY-->
         <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
         <!--/MYVAULT_TBODY-->
       </tbody>
     </table>
 
-    <div class="section-title" id="gra">GRA – Releases</div>
+    <div class="section-title" id="gra">GRA - Releases</div>
     <table>
       <thead>
         <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
       </thead>
       <tbody>
-        <!--GRA_TBODY--> 
+        <!--GRA_TBODY-->
         <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
         <!--/GRA_TBODY-->
       </tbody>
     </table>
 
-    <div class="section-title" id="mfa">MFA – Releases</div>
+    <div class="section-title" id="mfa">MFA - Releases</div>
     <table>
       <thead>
         <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
       </thead>
       <tbody>
-        <!--MFA_TBODY--> 
+        <!--MFA_TBODY-->
         <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
         <!--/MFA_TBODY-->
       </tbody>
     </table>
-<!-- Patches Shared -->
-<div class="section-title" id="patches-shared">Patches Shared</div>
-<p>View patches that have been shared across PAM, Converged Identity, and EPM.</p>
 
-<a class="btn"
-   href="https://arcon-tech-solution.atlassian.net/issues/?jql=project%20IN%20(%22PAM%20Issue%20Tracker%22,%20%22Converged%20Identity%22,%20%22EPM%20Issue%20Tracker%22)%20AND%20status%20=%20%22Patch%20Shared%22"
-   target="_blank">
-   View Patch Shared Issues
-</a>
+    <!-- Patches Shared -->
+    <div class="section-title" id="patches-shared">Patches Shared</div>
+    <p>View patches that have been shared across PAM, Converged Identity, and EPM.</p>
+    <a class="btn"
+       href="https://arcon-tech-solution.atlassian.net/issues/?jql=project%20IN%20(%22PAM%20Issue%20Tracker%22,%20%22Converged%20Identity%22,%20%22EPM%20Issue%20Tracker%22)%20AND%20status%3D%22Patch%20Shared%22"
+       target="_blank">
+       View Patch Shared Issues
+    </a>
 
-<!-- Request a Release -->
-<div class="section-title" id="request-release">Request a Release</div>
-<p>To request a specific product release, please submit the request form below.</p>
-
-<a class="btn"
-   href="https://forms.office.com/r/m45W03uKfB"
-   target="_blank">
-   Request a Release
-</a>
+    <!-- Request a Release -->
+    <div class="section-title" id="request-release">Request a Release</div>
+    <p>To request a specific product release, please submit the request form below.</p>
+    <a class="btn" href="https://forms.office.com/r/m45W03uKfB" target="_blank">Request a Release</a>
 
   </div>
   <footer>© ARCON • Release Management Team</footer>
