@@ -1,0 +1,37 @@
+name: Update content from Jira (every 2 hours)
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"   # every 2 hours
+  workflow_dispatch: {}      # allows you to run it manually
+
+permissions:
+  contents: write            # needed to commit index.html changes
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build index.html from Jira
+        env:
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+        run: |
+          node scripts/build-from-jira.mjs
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add index.html
+          git diff --staged --quiet || git commit -m "chore: auto-update from Jira"
+          git push
