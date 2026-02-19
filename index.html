@@ -11,6 +11,7 @@
     header { background:var(--brand); color:#fff; padding:20px }
     header h1 { margin:0 }
     header p { margin:6px 0 0; font-size:14px }
+    .subtle { color:#666; font-size:13px; }
     .tabs { position: sticky; top:0; z-index: 10; box-shadow: var(--shadow) }
     nav { background:#173e5f; display:flex; flex-wrap:wrap; gap:10px; padding:10px 20px }
     nav a { color:#fff; text-decoration:none; font-size:14px; background:rgba(255,255,255,.08); padding:6px 10px; border-radius:4px }
@@ -35,6 +36,7 @@
   <header id="top">
     <h1>ARCON Release Management Portal</h1>
     <p>Central hub for requesting and tracking product releases</p>
+    <p class="subtle">Last updated: <span id="last-updated"><!--LAST_UPDATED-->never<!--/LAST_UPDATED--></span></p>
   </header>
 
   <div class="tabs">
@@ -62,873 +64,80 @@
       <div class="card"><h3>MFA</h3><p>Multi-Factor Authentication</p><a class="btn" href="#mfa">View Releases</a></div>
     </div>
 
+    <!-- CI -->
     <div class="section-title" id="ci">Converged Identity - Releases</div>
     <table>
       <thead>
-        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
+        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th></tr>
       </thead>
       <tbody>
         <!--CI_TBODY-->
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<tr>
-      <td>—</td>
-      <td>Release</td>
-      <td><span class="badge planned">Planned</span></td>
-      <td>TBD</td>
-      <td>—</td>
-      <td>https://arcon-tech-solution.atlassian.net/browse/undefinedView</a></td>
-    </tr>
-<!--/CI_TBODY-->
+        <tr><td colspan="4">No data yet. This will auto-fill from Jira.</td></tr>
+        <!--/CI_TBODY-->
       </tbody>
     </table>
 
+    <!-- PAM -->
     <div class="section-title" id="pam">PAM - Releases</div>
     <table>
       <thead>
-        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
+        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th></tr>
       </thead>
       <tbody>
         <!--PAM_TBODY-->
-        <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
+        <tr><td colspan="4">No data yet. This will auto-fill from Jira.</td></tr>
         <!--/PAM_TBODY-->
       </tbody>
     </table>
 
+    <!-- EPM -->
     <div class="section-title" id="epm">EPM - Releases</div>
     <table>
       <thead>
-        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
+        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th></tr>
       </thead>
       <tbody>
         <!--EPM_TBODY-->
-        <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
+        <tr><td colspan="4">No data yet. This will auto-fill from Jira.</td></tr>
         <!--/EPM_TBODY-->
       </tbody>
     </table>
 
+    <!-- MyVault -->
     <div class="section-title" id="myvault">MyVault - Releases</div>
     <table>
       <thead>
-        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
+        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th></tr>
       </thead>
       <tbody>
         <!--MYVAULT_TBODY-->
-        <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
+        <tr><td colspan="4">No data yet. This will auto-fill from Jira.</td></tr>
         <!--/MYVAULT_TBODY-->
       </tbody>
     </table>
 
+    <!-- GRA -->
     <div class="section-title" id="gra">GRA - Releases</div>
     <table>
       <thead>
-        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
+        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th></tr>
       </thead>
       <tbody>
         <!--GRA_TBODY-->
-        <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
+        <tr><td colspan="4">No data yet. This will auto-fill from Jira.</td></tr>
         <!--/GRA_TBODY-->
       </tbody>
     </table>
 
+    <!-- MFA -->
     <div class="section-title" id="mfa">MFA - Releases</div>
     <table>
       <thead>
-        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th><th>Platform</th><th>Action</th></tr>
+        <tr><th>Version</th><th>Release Type</th><th>Status</th><th>Release Date</th></tr>
       </thead>
       <tbody>
         <!--MFA_TBODY-->
-        <tr><td colspan="6">No data yet. This will auto-fill from Jira.</td></tr>
+        <tr><td colspan="4">No data yet. This will auto-fill from Jira.</td></tr>
         <!--/MFA_TBODY-->
       </tbody>
     </table>
@@ -936,18 +145,14 @@
     <!-- Patches Shared -->
     <div class="section-title" id="patches-shared">Patches Shared</div>
     <p>View patches that have been shared across PAM, Converged Identity, and EPM.</p>
-    <a class="btn"
-       href="https://arcon-tech-solution.atlassian.net/issues/?jql=project%20IN%20(%22PAM%20Issue%20Tracker%22,%20%22Converged%20Identity%22,%20%22EPM%20Issue%20Tracker%22)%20AND%20status%3D%22Patch%20Shared%22"
-       target="_blank">
-       View Patch Shared Issues
-    </a>
+    <a class="btn" href="https://arcon-tech-solution.atlassian.net/issues/?jql=project%20IN%20(%22PAM%20Issue%20Tracker%22,%20%22Converged%20Identity%22,%20%22EPM%20Issue%20Tracker%22)%20AND%20status%3D%22Patch%20Shared%22" target="_blank">View Patch Shared Issues</a>
 
     <!-- Request a Release -->
     <div class="section-title" id="request-release">Request a Release</div>
-    <p>To request a specific product release, please submit the request form below.</p>
+    <p>To request a specific product release, please submit the request form.</p>
     <a class="btn" href="https://forms.office.com/r/m45W03uKfB" target="_blank">Request a Release</a>
-
   </div>
+
   <footer>© ARCON • Release Management Team</footer>
 </body>
 </html>
